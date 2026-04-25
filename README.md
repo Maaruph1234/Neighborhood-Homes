@@ -112,3 +112,55 @@ npm start
 - Images are loaded from Unsplash CDN — replace with your own in `data.ts`
 - Fonts load from Google Fonts — internet connection required in development
 - The project uses Next.js App Router (no `pages/` directory)
+
+---
+
+## Environment
+
+Create a `.env.local` in the project root (this file is gitignored). At minimum set:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=https://<your-project-id>.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-anon-key>
+SUPABASE_SERVICE_ROLE_KEY=<your-service-role-key> # server-side only
+ADMIN_SECRET=<random-string-for-admin>
+```
+
+Keep the service role key secret. Do not commit `.env.local` to git.
+
+## Deployment
+
+We recommend deploying to Vercel. Configure the same environment variables in the Vercel dashboard for your project (Settings → Environment Variables). After merging the branch, a Vercel deployment will automatically build the project.
+
+Alternatively, to deploy manually:
+
+```bash
+npm run build
+npm run start
+```
+
+## CI
+
+Create a GitHub Actions workflow to validate pull requests. Example (optional):
+
+`.github/workflows/ci.yml`:
+
+```yaml
+name: CI
+
+on:
+	pull_request:
+		branches: [ main ]
+
+jobs:
+	build:
+		runs-on: ubuntu-latest
+		steps:
+			- uses: actions/checkout@v4
+			- name: Use Node.js
+				uses: actions/setup-node@v4
+				with:
+					node-version: 20
+			- run: npm ci
+			- run: npm run build
+```
