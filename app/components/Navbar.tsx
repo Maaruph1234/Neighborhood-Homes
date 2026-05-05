@@ -59,17 +59,14 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => handleNav("/", "#hero")}
-          className="flex flex-col gap-0.5 text-left"
+          className="flex items-center text-left"
         >
-          <span
-            className="text-white font-serif text-xl font-semibold tracking-wide leading-none"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            Neighbourhood Homes
-          </span>
-          <span className="text-[9px] tracking-[0.22em] text-[#C9A84C] uppercase font-light">
-            Ecosystem Ltd.
-          </span>
+          <img
+            src="/logo1.png"
+            alt="Neighbourhood Homes"
+            className="h-16 w-auto object-contain"
+            style={{ filter: "brightness(1.4) saturate(1.3) contrast(1.1)" }}
+          />
         </button>
 
         {/* Desktop links */}

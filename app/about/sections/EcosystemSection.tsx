@@ -11,13 +11,15 @@ const entities = [
     name: "Neighbourhood Homes",
     sub: "Ecosystem Ltd.",
     description:
-      "Our flagship company. We source, list, and sell residential houses, land, and off-plan developments across Abuja, Lagos, Kaduna, and Kano. From the first enquiry to handing over the keys — this is us.",
+      "Our flagship company. We source, list, and sell residential houses, land, and off-plan developments across Abuja, Lagos, Kaduna, and Kano. We also bridge developers and property owners through our agency and liaison services — from first enquiry to handing over the keys.",
     services: [
       "Property Sales",
       "Land Acquisition",
       "Off-plan Developments",
       "Property Management",
       "Investment Consulting",
+      "Developer–Owner Agency",
+      "Owner & Developer Liaison",
     ],
     cta: "View Properties",
     ctaHref: "/properties",
@@ -69,7 +71,8 @@ export default function EcosystemSection() {
           <p className="text-white/50 text-[15px] leading-[1.85] font-light">
             The Neighbourhood brand brings together two independent entities — each
             expert in their field — to give you a seamless, fully supported property
-            journey from discovery to legal completion.
+            journey from discovery, developer matching, and liaison support, through to
+            legal completion.
           </p>
         </FadeIn>
 
@@ -182,8 +185,7 @@ export default function EcosystemSection() {
             </div>
             <div className="text-center sm:text-right">
               <div className="text-white/30 text-[12px] font-light leading-relaxed max-w-xs">
-                Together we provide a complete, trusted path from property search to
-                legal completion — all under the Neighbourhood name.
+                Together we provide a complete, trusted path — from property search and developer introductions to legal completion — all under the Neighbourhood name.
               </div>
             </div>
           </div>

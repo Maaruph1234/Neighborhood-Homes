@@ -36,8 +36,14 @@ export default function Footer() {
       {/* Main grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-14 border-b border-white/07">
         <div className="lg:col-span-2">
-          <div className="text-white text-[18px] font-semibold tracking-wide leading-none mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>Neighbourhood Homes</div>
-          <div className="text-[9px] tracking-[0.22em] text-[#C9A84C] uppercase mb-5">Ecosystem Ltd.</div>
+          <div className="mb-6">
+            <img
+              src="/logo1.png"
+              alt="Neighbourhood Homes"
+              className="h-16 w-auto object-contain"
+              style={{ filter: "brightness(1.4) saturate(1.3) contrast(1.1)" }}
+            />
+          </div>
           <p className="text-white/40 text-[13px] leading-relaxed font-light max-w-[280px] mb-5">
             A Nigerian real estate company specialising in land sales, property brokerage, and the development of residential and commercial properties across Nigeria.
           </p>

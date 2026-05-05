@@ -14,11 +14,6 @@ export default function PropertiesHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#071629]/70 via-transparent to-transparent" />
       </div>
 
-      <motion.div
-        className="absolute top-16 right-[8%] w-64 h-64 rounded-full border border-[#C9A84C]/08 z-0"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-      />
 
       <div className="relative z-10 px-[5vw] pb-20 pt-40 max-w-3xl">
         <motion.div

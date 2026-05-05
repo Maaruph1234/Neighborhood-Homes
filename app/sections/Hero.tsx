@@ -41,19 +41,6 @@ export default function Hero() {
 
 
 
-      {/* Floating gold orb decorations */}
-      <motion.div
-        className="absolute top-1/4 right-[8%] w-64 h-64 rounded-full border border-[#C9A84C]/10 z-0"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-      />
-      <motion.div
-        className="absolute top-1/4 right-[8%] w-44 h-44 rounded-full border border-[#C9A84C]/15 z-0"
-        style={{ top: "calc(25% + 40px)", right: "calc(8% + 40px)" }}
-        animate={{ rotate: -360 }}
-        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-      />
-
       {/* Content */}
       <motion.div
         className="relative z-10 px-[5vw] pb-24 max-w-3xl"

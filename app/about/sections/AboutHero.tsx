@@ -15,12 +15,7 @@ export default function AboutHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#071629]/60 via-transparent to-transparent" />
       </div>
 
-      {/* Decorative ring */}
-      <motion.div
-        className="absolute top-12 right-[8%] w-72 h-72 rounded-full border border-[#C9A84C]/10 z-0"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-      />
+
 
       <div className="relative z-10 px-[5vw] pb-20 pt-40 max-w-3xl">
         {/* Breadcrumb */}

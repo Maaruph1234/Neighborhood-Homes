@@ -14,16 +14,6 @@ export default function ServicesHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#071629]/70 via-transparent to-transparent" />
       </div>
 
-      <motion.div
-        className="absolute top-16 right-[8%] w-72 h-72 rounded-full border border-[#C9A84C]/08 z-0"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-      />
-      <motion.div
-        className="absolute top-24 right-[12%] w-40 h-40 rounded-full border border-[#C9A84C]/12 z-0"
-        animate={{ rotate: -360 }}
-        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-      />
 
       <div className="relative z-10 px-[5vw] pb-20 pt-40 max-w-3xl">
         <motion.div

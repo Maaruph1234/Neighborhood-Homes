@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Home, Building2, MapPin, Settings, TrendingUp, FileText, Check, ArrowRight } from "lucide-react";
+import { Home, Building2, MapPin, Settings, TrendingUp, FileText, Handshake, Users, Check, ArrowRight } from "lucide-react";
 import FadeIn from "../../components/FadeIn";
 
 const services = [
@@ -130,6 +130,50 @@ const services = [
     ctaHref: "/contact",
     flip: true,
     isSolicitors: true,
+  },
+  {
+    id: "agency",
+    icon: Handshake,
+    label: "Developer–Owner Agency",
+    tagline: "We bridge developers and property owners — so the right deals get done.",
+    description:
+      "Many property owners in Nigeria are ready to sell, but never find the right buyer. Meanwhile, developers are constantly searching for well-located land and properties to build on or acquire. Our Developer–Owner Agency closes that gap. We act as a trusted intermediary — qualifying both sides, managing introductions, and facilitating structured negotiations so every transaction is transparent, efficient, and fair.",
+    includes: [
+      "Owner listing and property assessment",
+      "Developer outreach and matching",
+      "Confidential introductions and structured meetings",
+      "Offer management and negotiation support",
+      "Due diligence coordination",
+      "Transaction oversight through to completion",
+    ],
+    cities: ["Abuja", "Lagos", "Kaduna", "Kano"],
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+    cta: "Register Interest",
+    ctaHref: "/contact",
+    flip: false,
+    isSolicitors: false,
+  },
+  {
+    id: "liaison",
+    icon: Users,
+    label: "Owner & Developer Liaison Services",
+    tagline: "Structured intermediary support — protecting interests on both sides of the table.",
+    description:
+      "Our Owner & Developer Liaison service goes a step further than brokerage. We act as an ongoing, structured intermediary between property owners and developers — managing communication, coordinating site visits, mediating negotiations, and ensuring both parties are fully informed at every stage. Whether you are an owner protecting generational assets or a developer with multiple acquisitions in flight, we provide a professional buffer that keeps deals moving without friction.",
+    includes: [
+      "Dedicated liaison officer assigned to each transaction",
+      "Structured communication management between parties",
+      "Site visit coordination and representation",
+      "Conflict resolution and negotiation mediation",
+      "Progress reporting to both owner and developer",
+      "Legal coordination with Neighbourhood Solicitors",
+    ],
+    cities: ["Abuja", "Lagos", "Kaduna", "Kano"],
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
+    cta: "Enquire About Liaison",
+    ctaHref: "/contact",
+    flip: true,
+    isSolicitors: false,
   },
 ];
 

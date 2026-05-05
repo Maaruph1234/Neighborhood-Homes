@@ -1,16 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
-import { Home, Building2, MapPin, Settings, TrendingUp, FileText } from "lucide-react";
+import { Home, Building2, MapPin, Settings, TrendingUp, FileText, Handshake, Users } from "lucide-react";
 import FadeIn from "../../components/FadeIn";
 import SectionLabel from "../../components/SectionLabel";
 
 const services = [
-  { icon: Home,       id: "sales",       label: "Property Sales",            short: "Buy or sell with expert guidance from valuation to keys." },
-  { icon: Building2,  id: "offplan",     label: "Off-plan & New Builds",     short: "Invest early in premium developments before completion." },
-  { icon: MapPin,     id: "land",        label: "Land Acquisition",          short: "Verified, titled plots in Abuja, Lagos, Kaduna, and Kano." },
-  { icon: Settings,   id: "management",  label: "Property Management",       short: "Full oversight of your investment — stress-free." },
-  { icon: TrendingUp, id: "investment",  label: "Investment Analysis",       short: "Data-driven ROI projections to guide smart decisions." },
-  { icon: FileText,   id: "legal",       label: "Legal & Documentation",     short: "All paperwork handled correctly, with Neighbourhood Solicitors." },
+  { icon: Home,       id: "sales",       label: "Property Sales",                   short: "Buy or sell with expert guidance from valuation to keys." },
+  { icon: Building2,  id: "offplan",     label: "Off-plan & New Builds",            short: "Invest early in premium developments before completion." },
+  { icon: MapPin,     id: "land",        label: "Land Acquisition",                 short: "Verified, titled plots in Abuja, Lagos, Kaduna, and Kano." },
+  { icon: Settings,   id: "management",  label: "Property Management",              short: "Full oversight of your investment — stress-free." },
+  { icon: TrendingUp, id: "investment",  label: "Investment Analysis",              short: "Data-driven ROI projections to guide smart decisions." },
+  { icon: FileText,   id: "legal",       label: "Legal & Documentation",            short: "All paperwork handled correctly, with Neighbourhood Solicitors." },
+  { icon: Handshake,  id: "agency",      label: "Developer–Owner Agency",           short: "We connect developers with property owners ready to sell — a bridge that closes deals." },
+  { icon: Users,      id: "liaison",     label: "Owner & Developer Liaison",        short: "Structured intermediary services for owners and developers navigating complex negotiations." },
 ];
 
 export default function ServicesOverview() {
@@ -31,7 +33,7 @@ export default function ServicesOverview() {
               fontWeight: 300,
             }}
           >
-            Six Ways We <em style={{ fontStyle: "italic" }}>Serve You</em>
+            Eight Ways We <em style={{ fontStyle: "italic" }}>Serve You</em>
           </h2>
         </FadeIn>
 
